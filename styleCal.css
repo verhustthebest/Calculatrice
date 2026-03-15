@@ -1,18 +1,63 @@
+
 body{
-font-family: Arial;
+text-align:center;  
+background: rgb(26, 26, 103);
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+h1{
+color:white;
+margin-bottom:40px;
+}
+
+
+/* monitor */
+#monitor{       
+width:220px;
+border-radius:8px;
+height:45px;
+font-size:30px;
+margin-bottom:20px;
+padding:5px;
 text-align:center;
 }
 
-#display{
-width:200px;
-height:40px;
-font-size:20px;
-margin-bottom:10px;
+
+/*btns */
+.buttons{
+width:240px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
 }
 
+
+/*btn */
 button{
-width:50px;
 height:50px;
-margin:5px;
 font-size:18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:#f1f1f1;
+}
+
+/*effet souris */
+button:hover{
+background:#7ad3e2;
+}
+
+/* btn = */
+#egal{
+background:#27ae60;
+color:white;
+}
+
+/* btn : C */
+#effac{
+background:#e74c3c;
+color:white;
 }

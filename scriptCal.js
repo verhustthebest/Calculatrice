@@ -1,33 +1,51 @@
-// sélectionner l'écran de la calculatrice
-const display = document.getElementById("display")
+// sélect écran
+const monitor = document.getElementById("monitor")
 
-// sélectionner tous les boutons
+// select boutons
 const buttons = document.querySelectorAll("button")
 
-// parcourir tous les boutons
+//Parcourir les bouton
 buttons.forEach(function(button){
 
 button.addEventListener("click", function(){
-
 const value = button.textContent
 
-// bouton clear
+// btn clear
 if(value === "C"){
-display.value = ""
+monitor.value = ""
 return
 }
 
-// bouton égal
+// btn égal
 if(value === "="){
-
-display.value = eval(display.value)
+monitor.value = eval(monitor.value)
 return
-
 }
 
 // ajouter le chiffre à l'écran
-display.value += value
-
+monitor.value += value
+})
 })
 
+//Listern Clavier (Envent)
+document.addEventListener("keydown", function(event){
+const key = event.key
+
+//If chiffre or sign
+if("0123456789+-*/.".includes(key)){
+monitor.value += key
+}
+//If clavier enter
+if(key === "Enter"){
+monitor.value = eval(monitor.value)
+}
+
+//If ESC : efface all
+if(key === "Escape"){
+monitor.value = ""
+}
+
+//If Space
+
+//Other touche
 })
