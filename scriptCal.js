@@ -1,29 +1,28 @@
 // sélect écran
 const monitor = document.getElementById("monitor")
-
 // select boutons
 const buttons = document.querySelectorAll("button")
 
 //Parcourir les bouton
 buttons.forEach(function(button){
-
+// Event
 button.addEventListener("click", function(){
-const value = button.textContent
+const enterval = button.textContent
 
 // btn clear
-if(value === "C"){
+if(enterval === "C"){
 monitor.value = ""
 return
 }
 
 // btn égal
-if(value === "="){
-monitor.value = eval(monitor.value)
+if(enterval === "="){
+monitor.value = eval(monitor.enterval)
 return
 }
 
 // ajouter le chiffre à l'écran
-monitor.value += value
+monitor.value += enterval
 })
 })
 
@@ -37,15 +36,11 @@ monitor.value += key
 }
 //If clavier enter
 if(key === "Enter"){
-monitor.value = eval(monitor.value)
+monitor.value = eval(monitor.enterval)
 }
 
 //If ESC : efface all
 if(key === "Escape"){
 monitor.value = ""
-}
-
-//If Space
-
-//Other touche
+} 
 })
