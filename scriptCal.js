@@ -3,7 +3,7 @@ const monitor = document.getElementById("monitor")
 // select boutons
 const buttons = document.querySelectorAll("button")
 
-//Parcourir les bouton
+//Parcourir les boutons
 buttons.forEach(function(button){
 // Event
 button.addEventListener("click", function(){
@@ -17,7 +17,7 @@ return
 
 // btn égal
 if(enterval === "="){
-monitor.value = eval(monitor.enterval)
+monitor.value = eval(monitor.value)
 return
 }
 
@@ -36,7 +36,7 @@ monitor.value += key
 }
 //If clavier enter
 if(key === "Enter"){
-monitor.value = eval(monitor.enterval)
+monitor.value = eval(monitor.value)
 }
 
 //If ESC : efface all
