@@ -10,7 +10,8 @@ align-items:center;
 
 h1{
 color:white;
-margin-bottom:40px;
+margin-bottom:50px;
+margin-top: 115px;
 }
 
 
@@ -60,4 +61,26 @@ color:white;
 #effac{
 background:#e74c3c;
 color:white;
+}
+
+@media (max-width: 600px){
+
+h1{
+font-size: 20px;
+}
+
+input{
+width: 100%;
+font-size: 18px;
+}
+
+button{
+width: 100%;
+font-size: 18px;
+}
+
+#meteo{
+width: 100%;
+}
+
 }
