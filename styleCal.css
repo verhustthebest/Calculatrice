@@ -1,42 +1,83 @@
-
+/* ==========================
+   BODY (centrage global)
+========================== */
 body{
 text-align:center;  
-background: rgb(42, 22, 44);
 height:100vh;
 display:flex;
 flex-direction:column;
-align-items:center;
+justify-content:center;     /* ✅ centre vertical */
+align-items:center;         /* ✅ centre horizontal */
+margin:0;
+background-image: url(../image/backgroundCalculator.png);
 }
 
+/* ==========================
+   TITRE
+========================== */
 h1{
 color:white;
-margin-bottom:50px;
-margin-top: 115px;
+margin:20px;
 }
 
+/* ==========================ddd    dddkfkhjf dsffqsqfqffff
+   CALCULATRICE (boîte)
+========================== */
+#calculator{
+border-radius:35px;
+background-color:#C78E9C;
+border: 2px solid;
+color: #eaea18;
 
-/* monitor */
+/* ✅ largeur stable */
+width:320px;
+height:auto;
+
+padding:20px;
+
+/* ✅ centrage interne */
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+/* ==========================
+   ÉCRAN
+========================== */
 #monitor{       
 width:220px;
 border-radius:8px;
 height:45px;
 font-size:30px;
-margin-bottom:20px;
 padding:5px;
 text-align:center;
+
+border: 1px solid;
+color: #012d6a;
+
+display:block;
+margin:20px auto;
 }
 
-
-/*btns */
+/* ==========================
+   BOUTONS (GRID CENTRÉ)
+========================== */
 .buttons{
-width:240px;
+width:100%;
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(4, 1fr);
 gap:10px;
+
+color: rgb(2, 2, 70);
+
+/* ✅ centre le grid */
+justify-content:center;
 }
 
-
-/*btn */
+/* ==========================
+   BOUTONS
+========================== */
 button{
 height:50px;
 font-size:18px;
@@ -44,43 +85,47 @@ border:none;
 border-radius:8px;
 cursor:pointer;
 background:#f1f1f1;
+font-weight: 600;
+color: rgb(3, 3, 71);
+
+border: 1px solid blue;
 }
 
-/*effet souris */
+/* hover */
 button:hover{
 background:#7ad3e2;
 }
 
-/* btn = */
+/* bouton = */
 #egal{
-background:#27ae60;
-color:white;
+background:#80f161;
+color:rgb(84, 3, 3);
 }
 
-/* btn : C */
+/* bouton C */
 #effac{
-background:#e74c3c;
-color:white;
+background:#f88174;
+color:#EAEA18;
+font-weight: 800;
 }
 
-@media (max-width: 600px){
+   /* RESPONSIVE MOBILE */
+@media (max-width:600px){
 
-h1{
-font-size: 20px;
+#calculator{
+width:90%;
 }
 
-input{
-width: 100%;
-font-size: 18px;
+#monitor{
+width:100%;
+font-size:24px;
 }
 
 button{
-width: 100%;
-font-size: 18px;
+font-size:18px;
 }
 
-#meteo{
-width: 100%;
+h1{
+font-size:20px;
 }
-
 }
