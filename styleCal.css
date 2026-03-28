@@ -1,50 +1,39 @@
-/* ==========================
-   BODY (centrage global)
-========================== */
+
 body{
 text-align:center;  
 height:100vh;
 display:flex;
 flex-direction:column;
-justify-content:center;     /* ✅ centre vertical */
-align-items:center;         /* ✅ centre horizontal */
+justify-content:center;   
+align-items:center;        
 margin:0;
-background-image: url(../image/backgroundCalculator.png);
+background-image: url(../image/backgroundCalculator.PNG);
 }
 
-/* ==========================
-   TITRE
-========================== */
+/* TITRE : CALULATRICE...*/
 h1{
 color:white;
 margin:20px;
 }
 
-/* ==========================ddd    dddkfkhjf dsffqsqfqffff
-   CALCULATRICE (boîte)
-========================== */
+/* SECTION : CALCULATOR */
+
 #calculator{
 border-radius:35px;
 background-color:#f76c8e;
 border: 2px solid;
 color: #eaea18;
-
-/* ✅ largeur stable */
 width:320px;
 height:auto;
-
 padding:20px;
-
-/* ✅ centrage interne */
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
 }
 
-/* ==========================
-   ÉCRAN
-========================== */
+/* ECRAN : Monitor  */
+
 #monitor{       
 width:220px;
 border-radius:8px;
@@ -60,9 +49,8 @@ display:block;
 margin:20px auto;
 }
 
-/* ==========================
-   BOUTONS (GRID CENTRÉ)
-========================== */
+/* BOUTONS */
+
 .buttons{
 width:100%;
 display:grid;
@@ -75,9 +63,8 @@ color: rgb(2, 2, 70);
 justify-content:center;
 }
 
-/* ==========================
-   BOUTONS
-========================== */
+/* BOUTONS */
+
 button{
 height:50px;
 font-size:18px;
@@ -109,7 +96,8 @@ color:#232302;
 font-weight: 800;
 }
 
-   /* RESPONSIVE MOBILE */
+/* RESPONSIVE MOBILE */
+
 @media (max-width:600px){
 
 #calculator{
