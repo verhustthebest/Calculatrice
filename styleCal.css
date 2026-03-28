@@ -25,7 +25,7 @@ margin:20px;
 ========================== */
 #calculator{
 border-radius:35px;
-background-color:#C78E9C;
+background-color:#f76c8e;
 border: 2px solid;
 color: #eaea18;
 
@@ -105,7 +105,7 @@ color:rgb(84, 3, 3);
 /* bouton C */
 #effac{
 background:#f88174;
-color:#EAEA18;
+color:#232302;
 font-weight: 800;
 }
 
